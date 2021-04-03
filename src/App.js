@@ -51,9 +51,7 @@ function App() {
     }
   }
 
-  console.log(inc)
-  console.log(fields.associated_lump)
-  console.log(fields)
+  //console.log(fields)
   return (
     <div className="App">
       <div>
