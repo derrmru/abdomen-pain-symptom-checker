@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.torso-flex-container {
+  width: 50%;
+  min-height: 65vh;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.set-stage-button {
+  height: 50px;
+  width: 40%;
+  background-color: #08303a;
+  border: none;
+  border-radius: 0;
   color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  align-self: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+@media (hover:hover) {
+  .set-stage-button:hover {
+    background-color: #75c4ba;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.question-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.BMIBox {
+  width: 50%;
+  margin: auto;
+  padding: 10px 0;
+  border: 2px solid #08303a;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .torso-flex-container {
+      width: 94%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/*text input  */
+.tiLabel {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.tiInput {
+  width: 98%;
+  margin: 10px 0 20px 0;
+  border: 2px solid #08303a;
+  border-radius: 0;
+  padding: 10px 5px;
+  box-sizing: border-box;
+
+}
+
+.tiDescription {
+  font-size: 12px;
+  width: 100%;
+  float: left;
+  margin: 10px 0 0 0; 
+  padding: 0;
+}
+
+.fade-in {
+  animation: fadeIn ease .8s;
+  -webkit-animation: fadeIn ease .8s;
+  -moz-animation: fadeIn ease .8s;
+  -o-animation: fadeIn ease .8s;
+  -ms-animation: fadeIn ease .8s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

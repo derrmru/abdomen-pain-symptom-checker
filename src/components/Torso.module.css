@@ -1,0 +1,56 @@
+.torsoContainer {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    position: relative;
+}
+
+.theTorso {
+    width: 100%;
+    height: auto;
+}
+
+.Quadrant {
+    fill: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Umbilical {
+    fill: rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media (hover:hover) {
+    .Quadrant:hover {
+        fill: rgba(255, 0, 0, 0.418);
+    }
+    .Umbilical:hover {
+        fill: rgba(255, 0, 0, 0.418);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .theTorso {
+        width: 98%;
+    }
+    .Quadrant {
+        fill: #08303a46;
+    }
+}
+
+.hoverItem {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #143c46;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 3px 8px -2px rgba(20,60,70,.9);
+    -moz-box-shadow: 0px 3px 8px -2px rgba(20,60,70,.9);
+    box-shadow: 0px 3px 8px -2px rgba(20,60,70,.9);
+}

@@ -1,0 +1,20 @@
+.NumberContainer {
+    width: 88%;
+    margin: 20px auto 20px auto;
+    text-align: left;
+}
+
+.niInput {
+    width: 98%;
+    margin: 0;
+    border: 2px solid #08303a;
+    border-radius: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.numberLabel {
+    font-weight: 800;
+    font-size: 20px;
+}
