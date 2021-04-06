@@ -31,7 +31,15 @@ const TextInput: React.FC<Props> = (props) => {
             <input
                 id={props.id || ''}
                 type="text"
-                className="tiInput"
+                style={{
+                    border: 'none',
+                    width: '100%',
+                    padding: '10px 5px',
+                    marginBottom: '30px',
+                    borderRadius: '0',
+                    borderBottom: '1px solid #08303a',
+                    outline: 'none'
+                }}
                 name={props.name} 
                 value={props.value || ''}
                 onChange={(e) => props.updateField(props.name, e.target.value)}

@@ -23,7 +23,27 @@ const BookingForm = ({ fields, updateField }) => {
                 value={fields.email_address}
                 updateField={(name, value) => updateField(name, value)}
                 />
-            <input type="submit" value="Submit >" />
+            <div
+                style={{
+                    width: '100%',
+                    textAlign: 'right'
+                }}
+                >
+                <input 
+                    type="submit" 
+                    style={{
+                        float: 'right',
+                        cursor: 'pointer',
+                        backgroundColor: '#08303a',
+                        color: 'white',
+                        padding: '10px',
+                        boxSizing: 'border-box',
+                        border: 'none',
+
+                    }}
+                    value="Submit >" 
+                    />
+            </div>
         </form>
         </div>
     )

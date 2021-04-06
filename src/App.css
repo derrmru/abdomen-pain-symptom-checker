@@ -5,10 +5,14 @@
   padding: 0;
 }
 
+hr {
+  width: 50%;
+}
+
 .torso-flex-container {
-  width: 40%;
-  min-height: 65vh;
-  margin: auto;
+  width: 50%;
+  min-height: 60vh;
+  margin: 0 auto 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +21,6 @@
 }
 
 .set-stage-button {
-  height: 50px;
   width: 40%;
   background-color: #08303a;
   border: none;
@@ -27,6 +30,7 @@
   cursor: pointer;
   box-sizing: border-box;
   align-self: flex-end;
+  padding: 10px 0;
 }
 
 @media (hover:hover) {
@@ -37,7 +41,7 @@
 
 .question-container {
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 .BMIBox {
@@ -49,6 +53,9 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  hr {
+    width: 60%;
+  }
   .torso-flex-container {
       width: 60%;
       min-height: 50vh
@@ -56,6 +63,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  hr {
+    width: 96%;
+  }
   .torso-flex-container {
       width: 96%;
       min-height: 54vh;
@@ -71,6 +81,10 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+}
+
+.tiLabel > input[type=text]:focus {
+  background-color: #fcfcfc;
 }
 
 .tiInput {

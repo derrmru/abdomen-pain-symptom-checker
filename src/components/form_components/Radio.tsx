@@ -14,7 +14,7 @@ interface Props {
 const Radio: React.FC<Props> = (props) => {
     return (
         <div className={style.radioContainer}>
-            <label style={{fontSize: '14px', textAlign: 'left', width: '80%', margin: 'auto'}}>
+            <label style={{fontSize: '14px', textAlign: 'left', margin: 'auto'}}>
                 <div className={style.radioLabel}>{props.label}</div>
                 {
                     props.description && <div className={style.radioDescription}>{props.description}</div>

@@ -43,36 +43,38 @@ const Recommendation = ({ fields, updateField }) => {
         <div className={style.recommendationContainer}>
             <h3>Our Recommendation:</h3>
             <div className={style.recommendationText}>
-                {
-                    recommendation === 'CT Abdo-Pelvis' ?
-                        <>
-                            <p>We would advise on a <strong>CT scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                            <p>The fees associated with this are:</p>
-                            <ul>
-                                <li>£0</li>
-                                <li>£0</li>
-                            </ul>
-                        </> :
-                            recommendation === 'US Abdomen / Pelvis' ?
+                <div>
+                    {
+                        recommendation === 'CT Abdo-Pelvis' ?
                             <>
-                                <p>We would advise on an <strong>Ultrasound scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                <p>We would advise on a <strong>CT scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
                                 <p>The fees associated with this are:</p>
                                 <ul>
                                     <li>£0</li>
                                     <li>£0</li>
                                 </ul>
                             </> :
-                                recommendation === 'US Abdomen' &&
+                                recommendation === 'US Abdomen / Pelvis' ?
                                 <>
-                                    <p>We would advise on an <strong>Ultrasound scan of the abdomen</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                    <p>We would advise on an <strong>ultrasound scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
                                     <p>The fees associated with this are:</p>
                                     <ul>
                                         <li>£0</li>
                                         <li>£0</li>
                                     </ul>
-                                </>
-                }
-                <p>If you would like to reserve an appointment or have further questions, please do not hesitate to get in touch.</p>
+                                </> :
+                                    recommendation === 'US Abdomen' &&
+                                    <>
+                                        <p>We would advise on an <strong>ultrasound scan of the abdomen</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                        <p>The fees associated with this are:</p>
+                                        <ul>
+                                            <li>£0</li>
+                                            <li>£0</li>
+                                        </ul>
+                                    </>
+                    }
+                    <p>If you would like to reserve an appointment or have further questions, please do not hesitate to get in touch.</p>
+                </div>
                 <div className={style.bookingButtons}>
                     <button
                         onClick={() => setOpenForm(!openForm)}
@@ -87,7 +89,7 @@ const Recommendation = ({ fields, updateField }) => {
                             />
                     </div>
                     }
-                    <a className={style.buttonPageLink} href='/contact'>
+                    <a className={style.buttonPageLink} style={{textDecoration: 'none'}} href='/contact'>
                         <button>
                             Contact Us
                         </button>

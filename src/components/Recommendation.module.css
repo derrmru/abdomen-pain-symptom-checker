@@ -1,6 +1,6 @@
 .recommendationContainer {
     width: 90%;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     text-align: left;
     transition: 1s;
 }

@@ -247,7 +247,10 @@ const Torso = ({ updateField, selection }) => {
                     </g>
                 </g>
             </svg>
-            <div className={style.hoverItem}>
+            <div 
+                className={style.hoverItem}
+                style={selection ? {backgroundColor: '#08303a98', color: 'white'} : {}}
+                >
                 {hoverItem}
             </div>
         </div>

@@ -1,12 +1,12 @@
 .torsoContainer {
     width: 100%;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 0 auto;
     position: relative;
 }
 
 .theTorso {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 

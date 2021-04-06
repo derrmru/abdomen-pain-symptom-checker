@@ -34,6 +34,7 @@ function App() {
       if (inc === 4 && fields.associated_lump === 'Yes') {
         setInc(5)
       } else if (inc === 4 && fields.associated_lump === 'No') {
+        updateField('lump_size', 'None')
         setInc(6)
       } else {
         setInc(inc + 1)
@@ -51,15 +52,19 @@ function App() {
     }
   }
 
-  //console.log(fields)
+  console.log(fields)
   return (
     <div className="App">
-      <div>
+      <div style={{fontWeight: 600}}>
+        <hr style={{margin: ' 10px auto 10px auto', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
+        <i>
         {
           inc < stages.length - 1 ? 
             'Question ' + (inc + 1) + ' of ' + (stages.length - 1) :
               'Next Steps'
         }
+        </i>
+        <hr style={{margin: '10px auto 10px auto', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
       </div>
       <div className="torso-flex-container">
         {
