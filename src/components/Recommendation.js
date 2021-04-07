@@ -96,6 +96,7 @@ const Recommendation = ({ fields, updateField }) => {
                     </a>
                 </div>
             </div>
+            <hr style={{margin: ' 20px auto 10px auto', width: '100%', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
         </div>
     )
 }

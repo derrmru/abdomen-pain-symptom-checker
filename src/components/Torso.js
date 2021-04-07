@@ -8,6 +8,18 @@ const Torso = ({ updateField, selection }) => {
     const clicked = (name, value) => {
         updateField(name, value)
     }
+
+    const qStyle = {
+        strokeWidth: 2,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeMiterlimit: 10,
+        strokeDasharray: 'none',
+        strokeOpacity: 1
+    }
+
+    const theRed = 'rgba(255, 20, 0, 0.65)';
+
     return (
         <div className={style.torsoContainer}>
             <svg
@@ -157,14 +169,15 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Right Upper Quadrant')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Right Upper Quadrant')}
-                                    style={{
+                                    style={ selection === 'Right Upper Quadrant' ? {
+                                        fill: theRed,
                                         strokeWidth: 2,
                                         strokeLinecap: 'butt',
                                         strokeLinejoin: 'miter',
                                         strokeMiterlimit: 10,
                                         strokeDasharray: 'none',
                                         strokeOpacity: 1
-                                    }}
+                                    } : qStyle}
                                     d="m 0,0 c 0,0 -73.496,-78.053 -155.248,-71.526 l -1,-73.474 h 113 c 0,0 3,42 43.248,42 z" /></g><g
                                         transform="translate(649,504)"
                                         id="g110"><path
@@ -173,9 +186,15 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Left Upper Quadrant')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Left Upper Quadrant')}
-                                    style={{
-                                        strokeWidth: 2, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
-                                    }}
+                                    style={selection === 'Left Upper Quadrant' ? {
+                                        fill: theRed,
+                                        strokeWidth: 2,
+                                        strokeLinecap: 'butt',
+                                        strokeLinejoin: 'miter',
+                                        strokeMiterlimit: 10,
+                                        strokeDasharray: 'none',
+                                        strokeOpacity: 1
+                                    } : qStyle}
                                     d="M 0,0 C 0,0 73.495,-78.053 155.248,-71.526 L 155,-145 40,-146 c 0,0 1,37 -40,43 z" /></g><g
                                         transform="translate(649,211)"
                                         id="g114"><path
@@ -184,9 +203,15 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Right Lower Quadrant')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Right Lower Quadrant')}
-                                    style={{
-                                        strokeWidth: 2, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
-                                    }}
+                                    style={selection === 'Right Lower Quadrant' ? {
+                                        fill: theRed,
+                                        strokeWidth: 2,
+                                        strokeLinecap: 'butt',
+                                        strokeLinejoin: 'miter',
+                                        strokeMiterlimit: 10,
+                                        strokeDasharray: 'none',
+                                        strokeOpacity: 1
+                                    } : qStyle}
                                     d="m 0,0 c 0,0 -125,13.474 -177,74 l 18,72 h 113 c 0,0 1,-40 46,-42 z" /></g><g
                                         transform="translate(649,211)"
                                         id="g118"><path
@@ -195,9 +220,15 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Left Lower Quadrant')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Left Lower Quadrant')}
-                                    style={{
-                                        strokeWidth: 2, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
-                                    }}
+                                    style={selection === 'Left Lower Quadrant' ? {
+                                        fill: theRed,
+                                        strokeWidth: 2,
+                                        strokeLinecap: 'butt',
+                                        strokeLinejoin: 'miter',
+                                        strokeMiterlimit: 10,
+                                        strokeDasharray: 'none',
+                                        strokeOpacity: 1
+                                    } : qStyle}
                                     d="m 0,0 c 0,0 122,12.474 174,73 l -19,73 -115,1 c 0,0 4,-36 -40,-43 z" /></g><g
                                         transform="translate(649,490)"
                                         id="g122"><path
@@ -227,9 +258,15 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Umbilical')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Umbilical')}
-                                    style={{
-                                        strokeWidth: 2, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
-                                    }}
+                                    style={selection === 'Umbilical' ? {
+                                        fill: theRed,
+                                        strokeWidth: 2,
+                                        strokeLinecap: 'butt',
+                                        strokeLinejoin: 'miter',
+                                        strokeMiterlimit: 10,
+                                        strokeDasharray: 'none',
+                                        strokeOpacity: 1
+                                    } : qStyle}
                                     d="M 0,0 C 0,-23.472 -19.028,-42.5 -42.5,-42.5 -65.972,-42.5 -85,-23.472 -85,0 -85,23.472 -65.972,42.5 -42.5,42.5 -19.028,42.5 0,23.472 0,0 Z" /></g>
                                     <g
                                         transform="translate(468.6509,284)"
@@ -239,9 +276,15 @@ const Torso = ({ updateField, selection }) => {
                                         onMouseOver={() => setHoverItem('Pelvis')}
                                         onMouseLeave={() => setHoverItem(start)}
                                         onClick={() => clicked('area_of_pain', 'Pelvis')}
-                                        style={{
-                                            strokeWidth: 2, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
-                                        }}
+                                        style={selection === 'Pelvis' ? {
+                                            fill: theRed,
+                                            strokeWidth: 2,
+                                            strokeLinecap: 'butt',
+                                            strokeLinejoin: 'miter',
+                                            strokeMiterlimit: 10,
+                                            strokeDasharray: 'none',
+                                            strokeOpacity: 1
+                                        } : qStyle}
                                         d="m 0,0 c 0,0 170.349,-163 354.349,0 l 17,-110 c 0,0 -162,-136 -387,0 z" /></g>
                         </g>
                     </g>

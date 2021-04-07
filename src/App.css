@@ -30,7 +30,7 @@ hr {
   cursor: pointer;
   box-sizing: border-box;
   align-self: flex-end;
-  padding: 10px 0;
+  height: 40px;
 }
 
 @media (hover:hover) {

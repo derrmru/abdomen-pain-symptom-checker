@@ -52,7 +52,6 @@ function App() {
     }
   }
 
-  console.log(fields)
   return (
     <div className="App">
       <div style={{fontWeight: 600}}>
@@ -181,6 +180,7 @@ function App() {
         {
           (Object.keys(fields).length >= 1 && inc >= 1) &&
             <button
+              style={{}}
               className="set-stage-button fade-in"
               onClick={() => decrement()}
             >
