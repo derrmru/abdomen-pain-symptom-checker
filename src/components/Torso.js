@@ -89,7 +89,7 @@ const Torso = ({ updateField, selection }) => {
                                             id="g20"><path
                                     id="path22"
                                     style={{
-                                        fill: 'none', stroke: '#69b8ae', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
+                                        fill: 'none', stroke: 'var(--abdomen)', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
                                     }}
                                     d="m 0,0 c 0,0 16.706,62.966 33.411,91.237 0,0 3.855,5.14 2.57,17.991 0,0 -8.995,95.092 60.396,138.783 0,0 14.136,2.571 26.986,8.996 0,0 66.822,37.265 104.088,50.116 0,0 19.276,14.135 25.701,25.701 0,0 1.285,20.56 0,34.696" /></g></g></g><g
                                         id="g24"><g
@@ -120,7 +120,7 @@ const Torso = ({ updateField, selection }) => {
                                             id="g60"><path
                                     id="path62"
                                     style={{
-                                        fill: 'none', stroke: '#69b8ae', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
+                                        fill: 'none', stroke: 'var(--abdomen)', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
                                     }}
                                     d="m 0,0 c 0,0 -25.701,26.986 -47.547,71.962 0,0 2.57,-41.121 -19.275,-96.378 0,0 -5.14,-7.709 -5.14,-52.686 v -64.252 l 1.284,-53.971 c 0,0 0,-14.135 3.856,-23.131 3.855,-8.995 33.411,-104.087 30.841,-163.199 0,0 5.14,-50.116 14.135,-116.938" /></g><g
                                         id="g64"><g
@@ -140,14 +140,14 @@ const Torso = ({ updateField, selection }) => {
                                                     id="g80"><path
                                     id="path82"
                                     style={{
-                                        fill: 'none', stroke: '#69b8ae', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
+                                        fill: 'none', stroke: 'var(--abdomen)', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
                                     }}
                                     d="m 0,0 c 0,0 25.701,26.986 47.546,71.962 0,0 -2.569,-41.121 19.276,-96.378 0,0 5.14,-7.709 5.14,-52.686 v -64.252 l -1.285,-53.971 c 0,0 0,-14.135 -3.855,-23.131 -3.855,-8.995 -33.411,-104.087 -30.841,-163.199 0,0 -5.14,-50.116 -14.135,-116.938" /></g><g
                                         transform="translate(964.1631,616.4805)"
                                         id="g84"><path
                                     id="path86"
                                     style={{
-                                        fill: 'none', stroke: '#69b8ae', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
+                                        fill: 'none', stroke: 'var(--abdomen)', strokeWidth: 8, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 10, strokeDasharray: 'none', strokeOpacity: 1
                                     }}
                                     d="m 0,0 c 0,0 -16.705,62.966 -33.411,91.237 0,0 -3.855,5.14 -2.57,17.991 0,0 8.996,95.092 -60.397,138.783 0,0 -14.135,2.571 -26.985,8.996 0,0 -66.823,37.265 -104.088,50.116 0,0 -19.276,14.135 -25.7,25.701 0,0 -1.286,20.56 0,34.696" /></g></g></g><g
                                         id="g88"><g
@@ -292,7 +292,7 @@ const Torso = ({ updateField, selection }) => {
             </svg>
             <div 
                 className={style.hoverItem}
-                style={selection ? {backgroundColor: '#08303a98', color: 'white'} : {}}
+                style={selection ? {backgroundColor: 'var(--translucent-ab)', color: 'white'} : {}}
                 >
                 {hoverItem}
             </div>

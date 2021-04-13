@@ -22,7 +22,19 @@
     margin: 20px 0 0 0;
     height: 40px;
     box-sizing: border-box;
-    background-color: #08303a;
+    background-color: var(--abdomen);
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bookingButtons > button:focus {
+    margin: 20px 0 0 0;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: var(--abdomen);
     border: none;
     border-radius: 0;
     color: white;
@@ -32,10 +44,10 @@
 
 @media (hover:hover) {
     .bookingButtons > button:hover {
-        background-color: #75c4ba;
+        background-color: var(--ab-second);
     }
     .buttonPageLink > button:hover {
-        background-color: #75c4ba;
+        background-color: var(--ab-second);
     }
 }
 
@@ -51,7 +63,7 @@
     margin: 20px 0 0 0;
     height: 40px;
     box-sizing: border-box;
-    background-color: #08303a;
+    background-color: var(--abdomen);
     border: none;
     border-radius: 0;
     color: white;

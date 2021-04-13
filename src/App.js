@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <div style={{fontWeight: 600}}>
-        <hr style={{margin: ' 10px auto 10px auto', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
+        <hr style={{margin: ' 10px auto 10px auto', border: 'none', backgroundColor: '#593e52', height: '1px'}} />
         <i>
         {
           inc < stages.length - 1 ? 
@@ -63,7 +63,7 @@ function App() {
               'Next Steps'
         }
         </i>
-        <hr style={{margin: '10px auto 10px auto', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
+        <hr style={{margin: '10px auto 10px auto', border: 'none', backgroundColor: '#593e52', height: '1px'}} />
       </div>
       <div className="torso-flex-container">
         {

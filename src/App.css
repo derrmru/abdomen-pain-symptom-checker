@@ -1,16 +1,24 @@
+:root {
+  --abdomen: #593e52;
+  --translucent-ab: #593e5273;
+  --ab-second: #956927;
+}
+
 .App {
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
+  color: #593e52;
 }
 
 hr {
-  width: 50%;
+  width: 96%;
+  border: 1px solid var(--abdomen);
 }
 
 .torso-flex-container {
-  width: 50%;
+  width: 96%;
   min-height: 60vh;
   margin: 0 auto 0 auto;
   display: flex;
@@ -22,8 +30,21 @@ hr {
 
 .set-stage-button {
   width: 40%;
-  background-color: #08303a;
-  border: none;
+  background-color: var(--abdomen);
+  border: none !important;
+  border-radius: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  align-self: flex-end;
+  height: 40px;
+}
+
+.set-stage-button:focus {
+  width: 40%;
+  background-color: var(--abdomen);
+  border: none !important;
   border-radius: 0;
   color: white;
   font-size: 20px;
@@ -35,7 +56,7 @@ hr {
 
 @media (hover:hover) {
   .set-stage-button:hover {
-    background-color: #75c4ba;
+    background-color: var(--ab-second);
   }
 }
 
@@ -48,7 +69,7 @@ hr {
   width: 50%;
   margin: auto;
   padding: 10px 0;
-  border: 2px solid #08303a;
+  border: 2px solid var(--abdomen);
   box-sizing: border-box;
 }
 
@@ -57,7 +78,7 @@ hr {
     width: 60%;
   }
   .torso-flex-container {
-      width: 60%;
+      width: 100%;
       min-height: 50vh
   }
 }
@@ -67,7 +88,7 @@ hr {
     width: 96%;
   }
   .torso-flex-container {
-      width: 96%;
+      width: 100%;
       min-height: 54vh;
   }
 }
@@ -84,13 +105,13 @@ hr {
 }
 
 .tiLabel > input[type=text]:focus {
-  background-color: #fcfcfc;
+  background-color: white;
 }
 
 .tiInput {
   width: 98%;
   margin: 10px 0 20px 0;
-  border: 2px solid #08303a;
+  border: 2px solid var(--abdomen);
   border-radius: 0;
   padding: 10px 5px;
   box-sizing: border-box;

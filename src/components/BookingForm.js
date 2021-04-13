@@ -34,7 +34,7 @@ const BookingForm = ({ fields, updateField }) => {
                     style={{
                         float: 'right',
                         cursor: 'pointer',
-                        backgroundColor: '#08303a',
+                        backgroundColor: 'var(--abdomen)',
                         color: 'white',
                         padding: '10px',
                         boxSizing: 'border-box',

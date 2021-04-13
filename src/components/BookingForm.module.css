@@ -1,7 +1,7 @@
 .bookingFormContainer {
     width: 100%;
     margin: 20px auto;
-    border: 2px dotted #08303a;
+    border: 2px dotted var(--abdomen);
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -23,6 +23,6 @@
 
 @media (hover:hover) {
     .bookingFormContainer > input:hover {
-        background-color: #75c4ba;
+        background-color: var(--ab-second);
     }
 }

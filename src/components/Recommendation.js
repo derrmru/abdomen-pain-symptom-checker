@@ -41,7 +41,7 @@ const Recommendation = ({ fields, updateField }) => {
 
     return (
         <div className={style.recommendationContainer}>
-            <h3>Our Recommendation:</h3>
+            <h3 style={{color: 'var(--abdomen)'}}>Our Recommendation:</h3>
             <div className={style.recommendationText}>
                 <div>
                     {
@@ -77,6 +77,7 @@ const Recommendation = ({ fields, updateField }) => {
                 </div>
                 <div className={style.bookingButtons}>
                     <button
+                        style={{border: 'none'}}
                         onClick={() => setOpenForm(!openForm)}
                         >
                         Book An Appointment
@@ -89,14 +90,14 @@ const Recommendation = ({ fields, updateField }) => {
                             />
                     </div>
                     }
-                    <a className={style.buttonPageLink} style={{textDecoration: 'none'}} href='/contact'>
+                    <a className={style.buttonPageLink} style={{textDecoration: 'none', border: 'none'}} href='/contact'>
                         <button>
                             Contact Us
                         </button>
                     </a>
                 </div>
             </div>
-            <hr style={{margin: ' 20px auto 10px auto', width: '100%', border: 'none', backgroundColor: '#08303a', height: '1px'}} />
+            <hr style={{margin: ' 20px auto 10px auto', width: '100%', border: 'none', backgroundColor: 'var(--abdomen)', height: '1px'}} />
         </div>
     )
 }
