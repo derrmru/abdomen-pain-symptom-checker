@@ -47,29 +47,26 @@ const Recommendation = ({ fields, updateField }) => {
                     {
                         recommendation === 'CT Abdo-Pelvis' ?
                             <>
-                                <p>We would advise on a <strong>CT scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                <p>The fees associated with this are:</p>
+                                <p>We would advise on a <strong>CT scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                <p>The package fee associated with this are:</p>
                                 <ul>
-                                    <li>£0</li>
-                                    <li>£0</li>
+                                    <li>£900</li>
                                 </ul>
                             </> :
                                 recommendation === 'US Abdomen / Pelvis' ?
                                 <>
-                                    <p>We would advise on an <strong>ultrasound scan of the abdomen and pelvis</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                    <p>The fees associated with this are:</p>
+                                    <p>We would advise on an <strong>ultrasound scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                    <p>The package fee associated with this are:</p>
                                     <ul>
-                                        <li>£0</li>
-                                        <li>£0</li>
+                                        <li>£800</li>
                                     </ul>
                                 </> :
                                     recommendation === 'US Abdomen' &&
                                     <>
-                                        <p>We would advise on an <strong>ultrasound scan of the abdomen</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                        <p>The fees associated with this are:</p>
+                                        <p>We would advise on an <strong>ultrasound scan of the abdomen and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
+                                        <p>The package fee associated with this are:</p>
                                         <ul>
-                                            <li>£0</li>
-                                            <li>£0</li>
+                                            <li>£600</li>
                                         </ul>
                                     </>
                     }
