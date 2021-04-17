@@ -1,13 +1,38 @@
+import { useEffect, useState } from 'react'
+import $ from 'jquery'
+import Loading from './Loading'
 import TextInput from './form_components/TextInput'
 import style from './BookingForm.module.css'
 
 const BookingForm = ({ fields, updateField }) => {
+    const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false)
+    const [complete, setComplete] = useState(false)
     const submission = (e) => {
         e.preventDefault()
+        setLoading(true)
+        setError(false)
+        console.log(fields)
+
+        $.post(
+            window.location.origin + '/wp-admin/admin-ajax.php', 
+            {action: 'abdomen_form_submit', form_data: fields}, 
+            (res) => {
+                console.log(res)
+                res === 'Success' ? setComplete(true) : setError(true)
+            }
+        )
     }
+
+    useEffect(() => {
+        if (loading && (complete || error)) setLoading(false) 
+    })
+
     return (
         <div className="fade-in">
-        <form className={style.bookingFormContainer} onSubmit={(e) => submission(e)}>
+        {
+            !complete ?
+            <form className={style.bookingFormContainer} onSubmit={(e) => submission(e)}>
             <TextInput 
                 name='first_name'
                 value={fields.first_name}
@@ -23,6 +48,14 @@ const BookingForm = ({ fields, updateField }) => {
                 value={fields.email_address}
                 updateField={(name, value) => updateField(name, value)}
                 />
+            <TextInput 
+                name='telephone_number'
+                value={fields.telephone_number}
+                updateField={(name, value) => updateField(name, value)}
+                />
+            {
+                error && <div style={{color: 'red'}}>Error</div>
+            }
             <div
                 style={{
                     width: '100%',
@@ -41,10 +74,20 @@ const BookingForm = ({ fields, updateField }) => {
                         border: 'none',
 
                     }}
-                    value="Submit >" 
+                    value="Submit >"
+                    name="abdomen_submit" 
                     />
             </div>
-        </form>
+        </form> :
+            loading ? 
+                <Loading /> :
+                    complete && 
+                        <div className={style.bookingFormContainer + ' fade-in'} style={{textAlign: 'center'}}>
+                            <p style={{textAlign: 'left', width: '100%'}}>Your appointment request has been received and our admin team will be in touch with your shortly to arrange an appointment at your convenience.</p>
+                            <p style={{textAlign: 'left', width: '100%'}}>If you would like to discuss anything in the meantime, please do not hesitate to contact our team via:</p>
+                            <p style={{textAlign: 'left', width: '100%'}}>Telephone: 0207 467 6190<br/>Email: bookings@umegroup.com</p>
+                        </div>
+        }
         </div>
     )
 }

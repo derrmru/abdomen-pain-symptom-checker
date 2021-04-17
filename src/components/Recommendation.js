@@ -48,7 +48,7 @@ const Recommendation = ({ fields, updateField }) => {
                         recommendation === 'CT Abdo-Pelvis' ?
                             <>
                                 <p>We would advise on a <strong>CT scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                <p>The package fee associated with this are:</p>
+                                <p>The package fee associated with this is:</p>
                                 <ul>
                                     <li>£900</li>
                                 </ul>
@@ -56,7 +56,7 @@ const Recommendation = ({ fields, updateField }) => {
                                 recommendation === 'US Abdomen / Pelvis' ?
                                 <>
                                     <p>We would advise on an <strong>ultrasound scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                    <p>The package fee associated with this are:</p>
+                                    <p>The package fee associated with this is:</p>
                                     <ul>
                                         <li>£800</li>
                                     </ul>
@@ -64,7 +64,7 @@ const Recommendation = ({ fields, updateField }) => {
                                     recommendation === 'US Abdomen' &&
                                     <>
                                         <p>We would advise on an <strong>ultrasound scan of the abdomen and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                        <p>The package fee associated with this are:</p>
+                                        <p>The package fee associated with this is:</p>
                                         <ul>
                                             <li>£600</li>
                                         </ul>
