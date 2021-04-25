@@ -51,7 +51,7 @@ hr {
   cursor: pointer;
   box-sizing: border-box;
   align-self: flex-end;
-  height: 40px;
+  height: 40px !important;
 }
 
 @media (hover:hover) {

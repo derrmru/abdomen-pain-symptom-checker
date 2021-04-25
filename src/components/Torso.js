@@ -21,7 +21,9 @@ const Torso = ({ updateField, selection }) => {
     const theRed = 'rgba(255, 20, 0, 0.65)';
 
     return (
-        <div className={style.torsoContainer}>
+        <div
+            className={style.torsoContainer}
+        >
             <svg
                 className={style.theTorso}
                 viewBox="0 0 1706.6667 1365.3333"
@@ -169,7 +171,7 @@ const Torso = ({ updateField, selection }) => {
                                     onMouseOver={() => setHoverItem('Right Upper Quadrant')}
                                     onMouseLeave={() => setHoverItem(start)}
                                     onClick={() => clicked('area_of_pain', 'Right Upper Quadrant')}
-                                    style={ selection === 'Right Upper Quadrant' ? {
+                                    style={selection === 'Right Upper Quadrant' ? {
                                         fill: theRed,
                                         strokeWidth: 2,
                                         strokeLinecap: 'butt',
@@ -268,34 +270,135 @@ const Torso = ({ updateField, selection }) => {
                                         strokeOpacity: 1
                                     } : qStyle}
                                     d="M 0,0 C 0,-23.472 -19.028,-42.5 -42.5,-42.5 -65.972,-42.5 -85,-23.472 -85,0 -85,23.472 -65.972,42.5 -42.5,42.5 -19.028,42.5 0,23.472 0,0 Z" /></g>
-                                    <g
-                                        transform="translate(468.6509,284)"
-                                        id="g134"><path
-                                        id="path136"
-                                        className={style.Quadrant}
-                                        onMouseOver={() => setHoverItem('Pelvis')}
-                                        onMouseLeave={() => setHoverItem(start)}
-                                        onClick={() => clicked('area_of_pain', 'Pelvis')}
-                                        style={selection === 'Pelvis' ? {
-                                            fill: theRed,
-                                            strokeWidth: 2,
-                                            strokeLinecap: 'butt',
-                                            strokeLinejoin: 'miter',
-                                            strokeMiterlimit: 10,
-                                            strokeDasharray: 'none',
-                                            strokeOpacity: 1
-                                        } : qStyle}
-                                        d="m 0,0 c 0,0 170.349,-163 354.349,0 l 17,-110 c 0,0 -162,-136 -387,0 z" /></g>
+                            <g
+                                transform="translate(468.6509,284)"
+                                id="g134"><path
+                                    id="path136"
+                                    className={style.Quadrant}
+                                    onMouseOver={() => setHoverItem('Pelvis')}
+                                    onMouseLeave={() => setHoverItem(start)}
+                                    onClick={() => clicked('area_of_pain', 'Pelvis')}
+                                    style={selection === 'Pelvis' ? {
+                                        fill: theRed,
+                                        strokeWidth: 2,
+                                        strokeLinecap: 'butt',
+                                        strokeLinejoin: 'miter',
+                                        strokeMiterlimit: 10,
+                                        strokeDasharray: 'none',
+                                        strokeOpacity: 1
+                                    } : qStyle}
+                                    d="m 0,0 c 0,0 170.349,-163 354.349,0 l 17,-110 c 0,0 -162,-136 -387,0 z" /></g>
                         </g>
                     </g>
+                    <text
+       id="text140"
+       style={{
+           fontVariant:'normal',
+           fontWeight:'normal',
+           fontStretch: 'normal',
+           fontSize:'30px',
+           fontFamily: 'inherit',
+           writingMode: 'lr-tb',
+           fill: '#000000',
+           fillOpacity: 1,
+           fillRule: 'nonzero',
+           stroke: 'var(--abdomen)'
+       }}
+       transform="matrix(-8.1666639e-4,0.99999967,0.99999967,8.1666639e-4,364.4544,215.4977)"><tspan
+         id="tspan138"
+         y="0"
+         x="0 13.950005 30.42001 46.950016 56.760017 63.120022 79.560028 86.580032 103.35004 119.88304 129.81305 136.17305 150.96304 157.98305 174.90306">Your Right Side</tspan></text>
+<g
+       id="g142"><g
+         clip-path="url(#clipPath148)"
+         id="g144"><g
+           transform="translate(352,431)"
+           id="g150"><path
+             id="path152"
+             style={{
+                fill: 'none',
+                stroke: 'var(--abdomen)',
+                strokeWidth: 3,
+                strokeLinecap: 'butt',
+                strokeLinejoin: 'miter',
+                strokeMiterlimit: 10,
+                strokeDasharray: 'none',
+                strokeOpacity:1
+            }}
+             d="M 0,0 V 37 H 51" /></g><g
+           transform="translate(352,199)"
+           id="g154"><path
+             id="path156"
+             style={{
+                fill: 'none',
+                stroke: 'var(--abdomen)',
+                strokeWidth: 3,
+                strokeLinecap: 'butt',
+                strokeLinejoin: 'miter',
+                strokeMiterlimit: 10,
+                strokeDasharray: 'none',
+                strokeOpacity:1
+            }}
+             d="M 0,0 V -37 H 51" /></g><g
+           transform="translate(946,432)"
+           id="g158"><path
+             id="path160"
+             style={{
+                fill: 'none',
+                stroke: 'var(--abdomen)',
+                strokeWidth: 3,
+                strokeLinecap: 'butt',
+                strokeLinejoin: 'miter',
+                strokeMiterlimit: 10,
+                strokeDasharray: 'none',
+                strokeOpacity:1
+            }}
+             d="M 0,0 V 37 H -51" /></g><g
+           transform="translate(946,199)"
+           id="g162"><path
+             id="path164"
+             style={{
+                 fill: 'none',
+                 stroke: 'var(--abdomen)',
+                 strokeWidth: 3,
+                 strokeLinecap: 'butt',
+                 strokeLinejoin: 'miter',
+                 strokeMiterlimit: 10,
+                 strokeDasharray: 'none',
+                 strokeOpacity:1
+             }}
+             d="M 0,0 V -37 H -51" /></g></g></g><text
+       id="text168"
+       style={{
+        fontVariant:'normal',
+        fontWeight:'normal',
+        fontStretch: 'normal',
+        fontSize:'30px',
+        fontFamily: 'inherit',
+        writingMode: 'lr-tb',
+        fill: '#000000',
+        fillOpacity: 1,
+        fillRule: 'nonzero',
+        stroke: 'var(--abdomen)'
+       }}
+       transform="matrix(0.00126,-0.99999921,-0.99999921,-0.00126,934.6321,401.4057)"><tspan
+         id="tspan166"
+         y="0"
+         x="0 13.950011 30.420025 46.950039 56.760044 63.120049 76.860062 91.890076 100.97708 110.90709 117.26709 132.0571 139.07712 155.99713">Your Left Side</tspan></text>
                 </g>
             </svg>
-            <div 
+            <div
                 className={style.hoverItem}
-                style={selection ? {backgroundColor: 'var(--translucent-ab)', color: 'white'} : {}}
-                >
+                style={selection ? { backgroundColor: 'var(--translucent-ab)', color: 'white' } : {}}
+            >
                 {hoverItem}
             </div>
+            {/*<div
+                className={style.mirrorView}
+            >
+                Mirror View
+            </div>
+            */}
         </div>
     )
 }

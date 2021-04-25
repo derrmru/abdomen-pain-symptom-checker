@@ -26,7 +26,7 @@ const BookingForm = ({ fields, updateField }) => {
 
     useEffect(() => {
         if (loading && (complete || error)) setLoading(false) 
-    })
+    }, [loading, complete, error])
 
     return (
         <div className="fade-in">

@@ -47,9 +47,29 @@
     box-shadow: 0px 3px 8px -2px var(--translucent-ab);
 }
 
+.mirrorView {
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    background-color: #956927b0;
+    width: 40%;
+    margin: 20px auto;
+    padding: 2px;
+    border: 1px solid var(--ab-second);
+    color: white;
+    box-sizing: border-box;
+    font-size: 12px;
+    -webkit-box-shadow: 0px 3px 8px -2px var(--ab-second);
+    -moz-box-shadow: 0px 3px 8px -2px var(--ab-second);
+    box-shadow: 0px 3px 8px -2px var(--ab-second);
+}
+
 @media only screen and (max-width: 1025px) {
     .hoverItem {
         padding: 10px;
+    }
+    .mirrorView {
+        padding: 2px;
     }
 }
 
@@ -61,6 +81,9 @@
         fill: var(--translucent-ab);
     }
     .hoverItem {
+        font-size: 10px;
+    }
+    .mirrorView {
         font-size: 10px;
     }
 }

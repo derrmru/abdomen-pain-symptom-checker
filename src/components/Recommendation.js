@@ -47,37 +47,28 @@ const Recommendation = ({ fields, updateField }) => {
                     {
                         recommendation === 'CT Abdo-Pelvis' ?
                             <>
-                                <p>We would advise on a <strong>CT scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                <p>The package fee associated with this is:</p>
-                                <ul>
-                                    <li>£900</li>
-                                </ul>
+                                <p>Based on your answers, we would advise on a CT scan of the abdomen and pelvis and blood tests followed by a consultation with our doctor Mr. Ashish Rohatgi.</p>
+                                <p>The Package fee associated with this is £900, inclusive of tests and consultation.</p>
                             </> :
                                 recommendation === 'US Abdomen / Pelvis' ?
                                 <>
-                                    <p>We would advise on an <strong>ultrasound scan of the abdomen and pelvis and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                    <p>The package fee associated with this is:</p>
-                                    <ul>
-                                        <li>£800</li>
-                                    </ul>
+                                    <p>Based on your answers, we would advise on an ultrasound scan of the abdomen and pelvis and blood tests followed by a consultation with our doctor Mr. Ashish Rohatgi.</p>
+                                    <p>The Package fee associated with this is £800, inclusive of tests and consultation.</p>
                                 </> :
                                     recommendation === 'US Abdomen' &&
                                     <>
-                                        <p>We would advise on an <strong>ultrasound scan of the abdomen and blood tests</strong> followed by an appointment with our Consultant Upper GI, General & Laparoscopic Surgeon, Mr. Ashish Rohatgi.</p>
-                                        <p>The package fee associated with this is:</p>
-                                        <ul>
-                                            <li>£600</li>
-                                        </ul>
+                                        <p>Based on your answers, we would advise on an ultrasound scan of the abdomen and blood tests followed by a consultation with our doctor Mr. Ashish Rohatgi.</p>
+                                        <p>The Package fee associated with this is £600, inclusive of tests and consultation.</p>
                                     </>
                     }
-                    <p>If you would like to reserve an appointment or have further questions, please do not hesitate to get in touch.</p>
+                    <p>If you would like to book an appointment or have further questions, please do not hesitate to get in touch.</p>
                 </div>
                 <div className={style.bookingButtons}>
                     <button
                         style={{border: 'none'}}
                         onClick={() => setOpenForm(!openForm)}
                         >
-                        Book An Appointment
+                        Request An Appointment
                     </button>
                     {
                     openForm && <div>
@@ -87,11 +78,11 @@ const Recommendation = ({ fields, updateField }) => {
                             />
                     </div>
                     }
-                    <a className={style.buttonPageLink} style={{textDecoration: 'none', border: 'none'}} href='/contact'>
+                    {/*<a className={style.buttonPageLink} style={{textDecoration: 'none', border: 'none'}} href='/contact'>
                         <button>
                             Contact Us
                         </button>
-                    </a>
+                    </a>*/}
                 </div>
             </div>
             <hr style={{margin: ' 20px auto 10px auto', width: '100%', border: 'none', backgroundColor: 'var(--abdomen)', height: '1px'}} />
